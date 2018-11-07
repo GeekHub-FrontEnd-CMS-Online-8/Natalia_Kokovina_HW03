@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>lessons</title>
+    <style>
+        .old{width: 55px;}
+        .inf{width: 180px;}
+        section .inf{background-color: transparent}
+        .bday{width: 179px;}  
+    </style>
 </head>
 <body>
     <h1><strong>Урок "Формы": теги и их атрибуты.</strong></h1>
@@ -31,34 +38,33 @@
             </section>
 
             <section> <p> Возраст: 
-                <input type="number" id="old" value="" >
+                <input type="number" id="old" value="" class="old">
                 <label for="old"> лет </label> </p>
-
             </section>
 
         </fieldset>
         <br>
        <fieldset> 
             <legend><strong> Подробней о себе</strong></legend>
-            
+           <div> 
            <input type="radio" name="sex2" value="male" id="m2">
            <label for="m2"> Молодой человек </label>
            <br>
            <input type="radio" name="sex2" value="female" id="f2">
            <label for="f2"> Девушка </label>
            <br>
-           <input type="date" id="bday" value="">
+           <input type="date" id="bday" value="" class="bday">
            <label for="bday"> Дата рождения </label> 
            <br>
-           <input type="text" id="fstatus" value="">
+           <input type="text" id="fstatus" value="" class="inf">
            <label for="fstatus"> Семейное положение </label> 
            <br>
-           <input type="text" id="sstatus" value="">
+           <input type="text" id="sstatus" value="" class="inf">
            <label for="sstatus"> Социальный статус </label> 
            <br>                      
-           <input type="text" id="location" value="">
+           <input type="text" id="location" value="" class="inf">
            <label for="location"> Местожительство </label> 
-           <br>   
+           </div>  
            <section>
            <p><strong> Что вы обычно делаете на выходных: </strong></p>
                <input type="checkbox" id="sleep" value="sleep">
@@ -75,8 +81,9 @@
             </section>
             <section>
              <p><strong> Рассказать о формах в книге, посвященной HTML: </strong></p>
-                <select name="site">
+                <select name="site" class="inf">
                     <option value=""> Site frequency: </option>
+                    <option value=""> Site frequency2 </option>
                 </select>
             </section>          
 
@@ -130,7 +137,6 @@
                         <br>
                         <input type="checkbox" name="theme3" id="theme3" value="3">
                         <label for="theme3"> Заработай миллион за два дня! </label>
-                    <br>
                 </section>  
                 <section>
                     <p><strong> На сколько сложная задача: </strong></p>
